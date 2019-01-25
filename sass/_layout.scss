@@ -3,9 +3,63 @@
 }
 
 body {
-  background-color: black;
+  background-color: $blue;
 }
 
-p {
-  color: white;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.general-prop {
+  font-family: $font-roboto-regular;
+  color: $white;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+header {
+  padding: 20px 0 40px;
+
+  h1 {
+    @extend .general-prop;
+    font-weight: 400;
+    font-size: $font-size-26;
+  }
+}
+
+.buttons {
+  width: 50%;
+  margin: 100px auto 0;
+
+  button, a {
+    @extend .general-prop;
+    border: 1px solid $white;
+    background-color: inherit;
+    width: 400px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: $font-size-16;
+    text-decoration: none;
+    cursor: pointer;
+
+    i {
+      padding-top: 10px;
+    }
+  }
+}
+
+.box {
+  h2, h3 {
+    @extend .general-prop;
+    font-size: $font-size-20;
+    font-weight: 200;
+  }
 }

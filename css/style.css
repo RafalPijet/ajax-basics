@@ -1,13 +1,68 @@
+/* Colors */
+/* Font sizes */
+/* Fonts */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #55acee;
 }
 
-p {
-  color: white;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.general-prop, header h1, .buttons button, .buttons a, .box h2, .box h3 {
+  font-family: "Roboto Regular", arial;
+  color: #fff;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+header {
+  padding: 20px 0 40px;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.buttons {
+  width: 50%;
+  margin: 100px auto 0;
+}
+
+.buttons button, .buttons a {
+  border: 1px solid #fff;
+  background-color: inherit;
+  width: 400px;
+  height: 40px;
+  margin: 20px 0;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttons button i, .buttons a i {
+  padding-top: 10px;
+}
+
+.box h2, .box h3 {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 /* Components */
