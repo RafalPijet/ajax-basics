@@ -31,6 +31,10 @@ body {
   visibility: hidden;
 }
 
+.display-off {
+  display: none;
+}
+
 header {
   padding: 20px 0 40px;
 }
@@ -63,6 +67,28 @@ header h1 {
 .box h2, .box h3 {
   font-size: 20px;
   font-weight: 200;
+}
+
+#get-joke {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#get-joke img {
+  width: 15px;
+  height: 20px;
+}
+
+#get-joke p {
+  margin: 0;
+}
+
+#joke {
+  text-align: center;
 }
 
 /* Components */
